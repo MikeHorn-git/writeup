@@ -1,0 +1,2 @@
+style "#{File.dirname(__FILE__)}/style.rb"
+git_recurse true

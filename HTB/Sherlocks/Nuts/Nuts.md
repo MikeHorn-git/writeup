@@ -5,7 +5,8 @@ Into the classical powershell history file (ConsoleHost_history.txt), we find th
 
 # Q2: Identify the URL from which the package was downloaded ?
 
-TBD
+Checking Web History :
+![Url](./assets/2024-10-13T18_19_20,030404275+02_00.png)
 
 # Q3: Who is the threat actor responsible for publishing the malicious package? (the name of the package publisher)
 
@@ -24,7 +25,7 @@ The ID term is quite confusing. It's my first time with nuget on forensics inves
 
 # Q6: Which deceptive technique did the attacker employ during the initial access phase to manipulate user perception? (technique name)
 
-TBD
+We clearly see that we want to replicate the PublishIgnore string by deleting the "e". It's typosquatting.
 
 # Q7: Determine the full path of the file within the package containing the malicious code ?
 
@@ -33,7 +34,8 @@ Go to nuget default package location :
 
 # Q8: When tampering with the system's security settings, what command did the attacker employ?
 
-TBD
+At the start of the init.ps1 found before, we have 2 interesting command at the start :
+![Tampering](./assets/2024-10-13T18_27_20,217521588+02_00.png)
 
 # Q9: Following the security settings alteration, the attacker downloaded a malicious file to ensure continued access to the system. Provide the SHA1 hash of this file
 

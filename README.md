@@ -24,7 +24,7 @@ Unfinished challenges have their progression inside brackets.
 * CrownJewel-1
 * CrownJewel-2
 * Heartbreaker-Continuum
-* Nuts [68%]
+* Nuts [89%]
 * Reaper
 
 # Lint

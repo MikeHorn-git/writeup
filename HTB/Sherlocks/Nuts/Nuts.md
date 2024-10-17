@@ -61,7 +61,8 @@ We check event id [1117](https://learn.microsoft.com/en-us/defender-endpoint/tro
 
 # Q13: After establishing a connection with the C2 server, what was the first action taken by the attacker to enumerate the environment? Provide the name of the process.
 
-TBD
+I go back to the prefetch timeline. Check just after Updater.exe, we find whoami :
+![Whoami](./assets/2024-10-16T21_20_15,299323062+02_00.png)
 
 # Q14: To ensure continued access to the compromised machine, the attacker created a scheduled task. What is the name of the created task?
 
@@ -75,7 +76,8 @@ We open the xml file :
 
 # Q16: Upon concluding the intrusion, the attacker left behind a specific file on the compromised host. What is the name of this file?
 
-TBD
+We find an unusual Updater.exe on C:\ProgramData. So I open the file on VT :
+![VT](./assets/2024-10-16T21_46_09,571966584+02_00.png)
 
 # Q17: As an anti-forensics measure. The threat actor changed the file name after executing it. What is the new file name?
 
@@ -83,8 +85,9 @@ TBD
 
 # Q18: Identify the malware family associated with the file mentioned in the previous question (17).
 
-TBD
+The 3 family labels present on the main page not match. So I check in Community, and find in the last post.
 
 # Q19: When was the file dropped onto the system? Provide the timestamp in UTC.
 
-TBD
+We open the [Master File Table](https://learn.microsoft.com/en-us/windows/win32/fileio/master-file-table) in Timeline explorer after using [MFTECmd](https://github.com/EricZimmerman/MFTECmd). Same process as PECmd from Q11. We search for Updater.exe :
+![MFT](./assets/2024-10-16T22_15_07,052799708+02_00.png)

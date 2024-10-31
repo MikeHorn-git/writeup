@@ -1,7 +1,7 @@
 # Netcat
 
-So when connecting to the challenge with have a lot of output.
-I redirect it to nc.log
+So when connecting to the challenge we have a lot of output.
+I redirect it to nc.log file.
 We can see some base64 pattern.
 
 # Script
